@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #data{
+           display:flex;
+           flex-wrap: wrap;
+               gap: 1.5rem;
+        }
+
+        .card{
+            width:48%;
+         
+            border: 1px solid #d3d3d3;
+             display: flex;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .content p{
+            margin: 0.5em;
+        }
+
+        .photo{
+         border-radius: 50%;
+             padding: 2rem;
+        }
+
+        .photo img{
+  border-radius: 50%;
+    border: 1px solid #d3d3d3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <button id="btn-1">Enter</button>
+        <p id="text"></p>
+    </div>
+
+    <div id="data">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

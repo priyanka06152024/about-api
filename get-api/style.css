@@ -1,0 +1,43 @@
+
+
+#about-books{
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+#about-books a{
+    text-decoration: none;
+    width:30%;
+    color:#000;
+}
+
+
+
+.card{
+text-align: center;
+  
+    border: 0.8px solid #c8c9ca;
+    border-radius: 15px;
+    
+    padding: 0.5rem;
+    background-color: #fff;
+}
+
+/* .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content p{
+    width:2rem;
+
+} */
+
+.con{
+     background-color: rgb(48, 137, 209);
+}
