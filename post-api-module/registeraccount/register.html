@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Background */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        /* Card */
+        .register-card {
+            width: 350px;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Container */
+        .reg-con {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Inputs */
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .details {
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 14px;
+            transition: 0.3s ease;
+        }
+
+        .details::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .details:focus {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        /* Button */
+        .register-btn {
+            padding: 12px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        .register-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .register-btn:active {
+            transform: translateY(0px);
+        }
+
+        /* Animation */
+        .register-card {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register-card">
+        <div class="reg-con">
+            <div class="input-box"><input type="text" id="name" class="details" placeholder="Full Name" value="" />
+                <input type="email"  id="email" class=" details" placeholder="email" value="" />
+              
+                <input type="password"  id="password" class="details" placeholder="Password" value=""/>
+            </div>
+            <button class="register-btn">Register</button>
+        </div>
+    </div>
+    <script src="register.js"></script>
+
+</body>
+
+</html>

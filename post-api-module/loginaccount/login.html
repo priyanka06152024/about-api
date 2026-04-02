@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Card */
+.login-card {
+width: 350px;
+padding: 35px;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+animation: float 3s ease-in-out infinite;
+}
+
+.login-con {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.login-con h2 {
+color: white;
+text-align: center;
+font-weight: 500;
+}
+
+/* Inputs */
+
+.input-box {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.details {
+padding: 12px 15px;
+border-radius: 10px;
+border: none;
+outline: none;
+background: rgba(255,255,255,0.2);
+color: white;
+font-size: 14px;
+transition: 0.3s ease;
+}
+
+.details::placeholder {
+color: rgba(255,255,255,0.8);
+}
+
+.details:focus {
+background: rgba(255,255,255,0.3);
+transform: scale(1.02);
+}
+
+/* Button */
+
+.login-btn {
+padding: 12px;
+border-radius: 12px;
+border: none;
+cursor: pointer;
+background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+color: white;
+font-size: 16px;
+font-weight: 500;
+transition: 0.3s ease;
+}
+
+.login-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Register Link */
+
+.register-link {
+color: white;
+text-align: center;
+font-size: 14px;
+}
+
+.register-link a {
+color: #ffd369;
+text-decoration: none;
+font-weight: 500;
+}
+
+.register-link a:hover {
+text-decoration: underline;
+}
+
+/* Floating Animation */
+
+@keyframes float {
+0% { transform: translateY(0px); }
+50% { transform: translateY(-8px); }
+100% { transform: translateY(0px); }
+}
+
+/* Responsive */
+
+@media(max-width:400px){
+.login-card{
+width:90%;
+}
+}
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="login-con">
+            <h2>Login</h2>
+
+            <div class="input-box">
+                <input type="email" class="details" id="email" placeholder="Email" />
+                <input type="password" class="details" id="password" placeholder="Password" />
+            </div>
+
+            <button class="login-btn">Login</button>
+
+            <p class="register-link">
+                Don't have an account? <a href="../registeraccount/register.html">Register</a>
+            </p>
+
+        </div>
+    </div>
+<script src="login.js"></script>
+</body>
+</html>
