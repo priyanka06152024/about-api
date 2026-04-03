@@ -19,9 +19,9 @@ loginBtn.addEventListener('click', () => {
 
             })
             const loginData = await loginResponse.json();
-            // if(loginData.message === "Login successful"){
-            //     location.replace("http://127.0.0.1:5500/post-api-module/logoutaccount/logout.html");
-            // }
+            if(loginData.message === "Login successful"){
+                location.replace("http://127.0.0.1:5500/post-api-module/logoutaccount/logout.html");
+            }
             console.log(loginData);
             savetoken(loginData);
 
